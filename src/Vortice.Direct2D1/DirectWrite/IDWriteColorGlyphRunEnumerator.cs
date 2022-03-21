@@ -14,7 +14,7 @@ namespace Vortice.DirectWrite
 
         internal unsafe ColorGlyphRun GetCurrentRun()
         {
-            ColorGlyphRun colorGlyphRun = default;
+            ColorGlyphRun colorGlyphRun = new ColorGlyphRun();
             ColorGlyphRun.__Native* colorGlyphRun_ = (ColorGlyphRun.__Native*)GetCurrentRun_();
             colorGlyphRun.__MarshalFrom(ref *colorGlyphRun_);
             return colorGlyphRun;

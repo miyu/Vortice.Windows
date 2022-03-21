@@ -341,9 +341,16 @@
     <map field="DWRITE_GLYPH_RUN::glyphIndices" visibility="internal" name="GlyphIndicesPointer" />
     <map field="DWRITE_GLYPH_RUN::glyphAdvances" visibility="internal" name="GlyphAdvancesPointer" />
     <map field="DWRITE_GLYPH_RUN::glyphOffsets" visibility="internal" name="GlyphOffsetsPointer" />
+
     <map struct="DWRITE_GLYPH_RUN_DESCRIPTION" native="true" struct-to-class="true" marshal="true" new="false" />
     <map field="DWRITE_GLYPH_RUN_DESCRIPTION::stringLength" visibility="internal" name="TextLength" />
     <map field="DWRITE_GLYPH_RUN_DESCRIPTION::string" name="Text" />
+
+    <map struct="DWRITE_COLOR_GLYPH_RUN" native="true" struct-to-class="true" marshal="true" new="false" />
+    <map field="DWRITE_COLOR_GLYPH_RUN::glyphRunDescription" visibility="internal" name="GlyphRunDescriptionPointer" />
+
+    <map struct="DWRITE_COLOR_GLYPH_RUN1" native="true" struct-to-class="true" marshal="true" new="false" />
+    <map field="DWRITE_COLOR_GLYPH_RUN1::glyphRunDescription" visibility="internal" name="GlyphRunDescriptionPointer" />
 
     <!-- d2d1 structs -->
     <map struct="D2D1(.*)" name-tmp="$1" />
